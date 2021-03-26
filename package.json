@@ -8,8 +8,23 @@
     "start": "next start"
   },
   "dependencies": {
+    "@vercel/fetch": "^6.1.0",
+    "ahooks": "^2.9.6",
+    "autoprefixer": "^10.2.4",
+    "bowser": "^2.11.0",
+    "classnames": "^2.2.6",
+    "cookie": "^0.4.1",
+    "js-cookie": "^2.2.1",
+    "lodash": "^4.17.21",
     "next": "10.0.5",
+    "next-seo": "^4.20.0",
+    "next-themes": "^0.0.12",
+    "postcss": "^8.1.7",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "tailwindcss": "^2.0.3"
+  },
+  "devDependencies": {
+    "sass": "^1.32.8"
   }
 }
