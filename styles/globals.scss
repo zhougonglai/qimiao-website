@@ -1,18 +1,22 @@
+@tailwind base;
 @import './base.scss';
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind components;
+@import './components.scss';
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind utilities;
 
-* {
-  box-sizing: border-box;
+
+.has-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(315deg, #9B66FF 0%, #6236FF 100%);
+  background-image: url('/img/bg@1x.png');
+  background-size: 2558px 900px;
+  background-position: top center;
+  min-height: 900px;
+  @media (min-resolution: 2dppx) {
+    background-image: url('/img/bg@2x.png');
+  }
 }

@@ -1,0 +1,10 @@
+.header{
+  background-color: var(--weui-BG);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
+}

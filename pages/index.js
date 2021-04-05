@@ -1,20 +1,23 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
+import Header from '@components/common/Header';
+import { Radio } from '@components/ui'
+import { useSetState } from 'ahooks';
+import c from 'classnames';
+import s from '../styles/Index.module.scss'
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
-      <main className={styles.main}>
-        ss
+  const [ state, setState ] = useSetState({
+    checked: false
+  })
+
+  return (
+    <>
+      <Header />
+      <main>
       </main>
 
-      <footer className={styles.footer}>
+      <footer>
       </footer>
-    </div>
+    </>
   )
 }
